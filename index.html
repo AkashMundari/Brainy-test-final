@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://csmthemes.com/themes/webi/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./css" rel="stylesheet" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webi - Webinar Landing Page</title>
+    <meta name="description" content="A Landing Page For Your Webinar" />
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+    <link href="./font-awesome.min.css" rel="stylesheet" />
+    <link href="./owl.carousel.css" rel="stylesheet" />
+    <link href="./jssocials.css" rel="stylesheet" />
+    <link href="./magnific-popup.css" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
+    <style>  
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .slider-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider-wrapper {
+            width: 200%;
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            width: calc(33.333% - 30px);
+            margin: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 6px;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card-img-top {
+            color: #6c757d;
+            font-size: 3em;
+            margin-top: 15px;
+        }
+        .nav-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .nav-dot:hover {
+            background-color: #999;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input#slide-dot-1:checked ~ .slider-wrapper {
+            transform: translateX(0);
+        }
+        input#slide-dot-2:checked ~ .slider-wrapper {
+            transform: translateX(-50%);
+        }
+        input#slide-dot-1:checked ~ .nav-dots .nav-dot:nth-child(1),
+        input#slide-dot-2:checked ~ .nav-dots .nav-dot:nth-child(2) {
+            background-color: #333;
+        }
+        @media (max-width: 992px) {
+            .card {
+                width: calc(50% - 30px);
+            }
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 30px);
+            }
+        }</style>
+  </head>
+  <body>
+    <!--navigation overlay-->
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li>
+            <a href="#hero-section">Home</a>
+          </li>
+          <li><a href="#agenda">Agenda</a></li>
+          
+          <li>
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a href="#benefits">Benefits</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--navigation overlay end-->
+
+  <!--Alert message-->
+
+<div class="alert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+  
+  <!--countdown-->
+  <div class="countdown text-center">
+    <p><i class="fa fa-exclamation-triangle"></i>Time Left:</p>
+    <span id="clock">218 weeks 4 days 17:24:24</span> </div>
+  <!--countdown end--> 
+  
+</div>
+
+<!--Alert message end--> 
+
+    <!--hero section-->
+
+    <header class="hero-section" id="hero-section">
+      <!--navigation-->
+
+      <nav
+        class="navbar navbar-default affix"
+        data-spy="affix"
+        data-offset-top="450"
+      >
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"
+              ><img class="logo" src="./logo.png" alt="logo" /><img
+                class="logo-nav"
+                alt="logo-nav"
+                src="./logo.png"
+            /></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" class="btn btn-nav"
+                >Register now</a
+              >
+            </li>
+            <li>
+              <a class="button-container" id="toggle"
+                ><span class="top"></span> <span class="middle"></span>
+                <span class="bottom"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--navigation end-->
+
+      <!--welcome message-->
+
+      <section class="container welcome-message text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              Invest in Brilliance: 
+          </br>
+          Gift your child an intelligent mind – <span
+          class="rotate"
+          style="text-shadow: black 0px 0px 0px; opacity: 1"
+          >Free Webinar</span
+        >
+              
+            </h1>
+            <h2>
+              Explore how brain training enhances cognitive skills, elevates academic success, and gives your child <em>a winning advantage</em>.
+            </h2>
+            <div class="cta-btn">
+              <a href="#" class="btn"
+                >Register NOW!</a
+              >
+              <p>* Limited registration only. Register before we're filled.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--welcome message end-->
+    </header>
+
+    <!--hero section end-->
+
+    <!--webinar agenda-->
+
+    <article class="agenda section-spacing" id="agenda">
+      <div class="container">
+        <p>Is your child focused enough? Are you concerned about their academic performance, math skills, or amount of screen time? You're not by yourself. Every parent wants their child grown up with the self-assurance, intelligence, and skills necessary to take on the difficulties of life.
+        </p>
+        <p>At Brainy Abacus, we are aware that the key to long-term success is having a more intelligent and keen mind. Through brain training, we unlock your child’s potential. Our Brainy Abacus program enhances mental arithmetic, sharpens cognitive skills, strengthens focus, conquers math anxiety, and introduces memory techniques alongside Vedic math to give them an academic edge.
+        </p>
+        <p>Join our free webinar to learn how early brain training can set your child on the path to a brighter future</p>
+      </br>
+          <!--schedule section-->
+          
+    <div class="text-center schedule section-spacing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-sm-4 col-md-3">
+                <h3><i class="fa-sharp fa-regular fa-calendar-days"></i>
+                </i>November 12th</h3>
+              </div>
+              <div class="col-sm-4 col-md-2">
+                <h3><i class="fa fa-clock-o"></i>10 am EST</h3>
+              </div>
+              <div class="col-sm-4 col-md-3">
+                <h3><i class="fa fa-microphone"></i>Duration 1 Hour</h3>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <a href="http://csmthemes.com/themes/webi/#" class="btn"
+                  >CLAIM YOUR SPOT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </br>
+    <center>
+      <!--Modal Video-->
+      <!--Modal Video end-->
+
+      <!--HTML5 Video-->
+      <iframe width="80%" height="450" src="https://www.youtube.com/embed/T_mbKEbLbXQ?si=IYSF6n-m6cHVvk5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <!--HTML5 Video end-->
+    </center>
+
+
+
+    <!--schedule section end-->
+    <article style="margin-top: 40px;">
+      <header class="section-header text-center">
+        <h2>Key Benefits</h2>
+        <h3>Benefits Of This Course</h3>
+      </header>
+      <div class="row">
+        <div class="col-md-6 col-md-push-6"><center><img src="./key_benefits.png" alt="key-benefits"></center></div>
+        <div class="col-md-6 col-md-pull-6">
+          <div
+            class="panel-group"
+            id="accordion"
+            role="tablist"
+            aria-multiselectable="true"
+          >
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 style="display: flex;" class="panel-title">
+                  <span>1</span>
+                  <a
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Build Confidence in </br>Problem-Solving
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseOne"
+                class="panel-collapse collapse in"
+                role="tabpanel"
+                aria-labelledby="headingOne"
+              >
+                <div class="panel-body">
+                  Brainy Abacus goes beyond improving math skills. It nurtures
+                  problem-solving abilities, fostering resilience in overcoming
+                  academic challenges.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+    
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 style="display: flex;" class="panel-title">
+                  <span>2</span>
+                  <a
+                    class="collapsed"
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Equip Your Child for the </br> Future
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseTwo"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingTwo"
+              >
+                <div class="panel-body">
+                  Our curriculum isn’t just about math. Brainy Abacus develops life
+                  skills such as analytical thinking, time management, and
+                  multitasking, giving your child a lifelong competitive edge.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+    
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 style="display: flex;"  class="panel-title">
+                  <span>3</span>
+                  <a
+                    class="collapsed"
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Create Positive Learning </br>Habits
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseThree"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingThree"
+              >
+                <div class="panel-body">
+                  Screen time can be turned into a powerful tool for learning. Our
+                  blend of digital and physical activities ensures your child builds
+                  discipline and focus, crucial skills for success in both academics
+                  and life.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+    
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 style="display: flex;"  class="panel-title">
+                  <span>4</span>
+                  <a
+                    class="collapsed"
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Develop Critical Thinking
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseFour"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingFour"
+              >
+                <div class="panel-body">
+                  Our unique Diziphyzi technique isn’t just about mental
+                  arithmetic—it sharpens your child’s critical thinking, memory
+                  recall, and concentration, skills essential for excelling in any
+                  subject.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+    
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 style="display: flex;"  class="panel-title">
+                  <div><span>5</span></div>
+                  <a
+                    class="collapsed"
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                   Transform Math Anxiety into </br> Enthusiasm
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseFive"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingFive"
+              >
+                <div class="panel-body">
+                  Many children struggle with math anxiety. Brainy Abacus transforms the way they approach numbers, making math fun and engaging, and helping them gain mastery over the subject.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+    
+            <!-- agenda details -->
+            <div class="panel panel-default">
+              <div  class="panel-heading" role="tab" id="headingSix">
+                <h4 style="display: flex;" class="panel-title">
+                  <div style="display: inline;"><span>6</span></div>
+                  <a
+                 
+                    class="collapsed"
+                    role="button"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                   International Recognition and </br>Competitive Edge
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseSix"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingSix"
+              >
+                <div class="panel-body">
+                  Your child will not only excel academically but also have the chance to compete at state, national, and international levels, earning globally recognized certifications.
+                </div>
+              </div>
+            </div>
+            <!-- agenda details end -->
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--webinar agenda end-->
+    
+    <!--counter-->
+    <div style="margin-top: 25px;margin-bottom: 15px;color: #333;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" class=" text-center section-spacing ">
+      <!--container-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <h2>5000+</h2>
+            <p>Attendees</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h2>20+</h2>
+            <p>Years Of Experience</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h2>350+</h2>
+            <p>Franchises In Gujarat</p>
+          </div>
+          <div class="col-sm-3 col-xs-6">
+            <h2>5L+</h2>
+            <p>Trusted Parents</p>
+          </div>
+        </div>
+      </div>
+      <!--container end-->
+    </div>
+    <!--counter end-->
+<!-- 
+    <div style="margin-bottom: 20px;" class="testimonials text-center" id="reviews">
+
+      <div class="container">
+        <h3><em>“Hear from Parents Who’ve Experienced Remarkable Changes”</em></h3>
+    </br>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 6px; margin-top: 5px;" class="card border-light bg-light text-center">
+              <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+              <div class="card-body blockquote">
+                <p class="card-text">“Brainy Abacus has boosted my child’s confidence in math beyond my expectations!” </p>
+                <footer class="blockquote-footer"><cite title="Source Title">– Mrs. Swati</cite></footer>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 6px; margin-top: 5px;" class="card border-light bg-light text-center">
+              <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+              <div class="card-body blockquote">
+                <p class="card-text">"The Brainy Abacus program has really impacted my child's ability to focus and overall academic performance."</p>
+                <footer class="blockquote-footer"><cite title="Source Title">– Mr. Amit</cite></footer>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4">
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 6px; margin-top: 5px;" class="card border-light bg-light text-center">
+              <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+              <div class="card-body blockquote">
+                <p class="card-text">"It's a game-changer! This program has really improved the math skills and the self-confidence of my child significantly."</p>
+                <footer class="blockquote-footer"><cite title="Source Title"> – Mr. Divyesh</cite></footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 6px; margin-top: 5px;" class="card border-light bg-light text-center">
+              <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+              <div class="card-body blockquote">
+                <p class="card-text">"It's a game-changer! This program has really improved the math skills and the self-confidence of my child significantly."</p>
+                <footer class="blockquote-footer"><cite title="Source Title"> – Mr. Divyesh</cite></footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 6px; margin-top: 5px;" class="card border-light bg-light text-center">
+              <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+              <div class="card-body blockquote">
+                <p class="card-text">"It's a game-changer! This program has really improved the math skills and the self-confidence of my child significantly."</p>
+                <footer class="blockquote-footer"><cite title="Source Title"> – Mr. Divyesh</cite></footer>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div> -->
+
+    <div class="slider-container" id="reviews">
+      <center>
+        <h2><em>“Hear from Parents Who’ve Experienced Remarkable Changes”</em></h2>
+        <img src="./Testimonial.png" alt="testimonial" width="500">
+      <!-- Radio buttons to control slider -->
+      <input type="radio" name="slider" id="slide-dot-1" checked>
+      <input type="radio" name="slider" id="slide-dot-2">
+      
+      <div class="slider-wrapper">
+          <div class="slide">
+              <div class="card">
+                  <i class="fa fa-quote-left card-img-top" aria-hidden="true"></i>
+                  <div class="card-body">
+                      <blockquote class="blockquote">
+                          <p class="card-text">"Brainy Abacus has boosted my child's confidence in math beyond my expectations!"</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">Mrs. Swati</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+              <div class="card">
+                  <i class="fa fa-quote-left card-img-top" aria-hidden="true"></i>
+                  <div class="card-body">
+                      <blockquote class="blockquote">
+                          <p class="card-text">"The Brainy Abacus program has really impacted my child's ability to focus and overall academic performance."</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">Mr. Amit</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+              <div class="card">
+                  <i class="fa fa-quote-left card-img-top" aria-hidden="true"></i>
+                  <div class="card-body">
+                      <blockquote class="blockquote">
+                          <p class="card-text">"It's a game-changer! This program has really improved the math skills and the self-confidence of my child significantly."</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">Mr. Divyesh</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="card">
+                  <i class="fa fa-quote-left card-img-top" aria-hidden="true"></i>
+                  <div class="card-body">
+                      <blockquote class="blockquote">
+                          <p class="card-text">"The improvement in my child's math skills since joining Brainy Abacus has been remarkable. Highly recommended!"</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">Mrs. Priya</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+              <div class="card">
+                  <i class="fa fa-quote-left card-img-top" aria-hidden="true"></i>
+                  <div class="card-body">
+                      <blockquote class="blockquote">
+                          <p class="card-text">"Brainy Abacus has made math fun for my child. Their mental calculation speed has improved tremendously!"</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">Mr. Rajesh</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+              <div class="card" style="visibility: hidden;"></div>
+          </div>
+      </div>
+      
+      <div class="nav-dots">
+          <label for="slide-dot-1" class="nav-dot"></label>
+          <label for="slide-dot-2" class="nav-dot"></label>
+      </div>
+  </div>
+    <!--Reviews end-->
+
+    <!--Benefits cta-->
+
+    <section class="benefits-cta section-spacing" id="benefits">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2>What You’ll Gain from the Webinar</h2>
+          <h3>In just one hour, our free webinar will help you</h3>
+        </header>
+        <div class="row">
+          <div class="col-md-10 center-block">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="benefits-cta-list">
+                  <!--benefits 1-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Unlock the Secret to Lifelong Success</h4>
+                    <p>
+                      Discover how brain training can transform unproductive screen time into a powerful tool for your child’s future.
+                    </p>
+                  </li>
+                  <!--benefits 1 end-->
+
+                  <!--benefits 2-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Dive into the Science Behind Brainy Abacus</h4>
+                    <p>
+                      Learn how our program accelerates brain development and sharpens critical cognitive skills.
+                    </p>
+                  </li>
+                  <!--benefits 2 end-->
+
+                  <!--benefits 3-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Why Brain Training Beats Physical Exercise</h4>
+                    <p>
+                      Understand why developing your child’s mind is just as crucial—if not more—than physical activity for their success.
+                    </p>
+                  </li>
+                  <!--benefits 3 end-->
+                  <!--benefits 4-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Strengthen Focus, Memory & Intelligence</h4>
+                    <p>
+                      Explore how Brainy Abacus improves focus, memory, intelligence, and key brain functions through mental arithmetic.
+                    </p>
+                  </li>
+                  <!--benefits 4 end-->
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="benefits-cta-list">
+                  
+
+                  <!--benefits 5-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Live Math Demo</h4>
+                    <p>
+                      Watch children solve complex math problems using only their minds—no calculators or pencils!
+                    </p>
+                  </li>
+                  <!--benefits 5 end-->
+
+                  <!--benefits 6-->
+                  <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h4>Simplify Learning with Diziphyzi</h4>
+                    <p>
+                      See how our unique method breaks down even the most challenging concepts into easy, digestible lessons.
+                    </p>
+                  </li>
+                  <!--benefits 6 end-->
+ <!--benefits 7-->
+ <li>
+  <i class="fa fa-check" aria-hidden="true"></i>
+  <h4>Experience AI-Powered Learning</h4>
+  <p>
+    Get an inside look at our revolutionary AI-powered Abacus app, the world’s top tool for advanced brain training.
+  </p>
+</li>
+<!--benefits 7 end-->
+                 
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--cta signup form-->
+
+        <div class="row">
+          <div class="col-md-6 center-block">
+            <section class="cta-form">
+              <form
+                id="cta-signup-form"
+                class="cta-signup-form"
+                novalidate="true"
+              >
+                <header class="text-center">
+                  <h2>Join the Webinar</h2>
+                  <p>Please fill in the details below to secure your spot in our upcoming free webinar:</p>
+                </header>
+                <div id="mc-error-cta">
+                  <i class="fa fa-exclamation-triangle"></i> Please enter a
+                  value
+                </div>
+                <div id="mc-success-cta">
+                  <i class="fa fa-envelope"></i> Awesome! Subscription
+                  confirmed.
+                </div>
+                <div class="form-group">
+                  <i class="fa fa-user"></i>
+                  <input
+                    type="text"
+                    value=""
+                    name="FNAME"
+                    class="form-control input-lg"
+                    id="input-name"
+                    placeholder="Child's Name"
+                    required=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <i class="fa-solid fa-phone"></i>
+                  <input
+  type="tel"
+  value=""
+  name="PHONE"
+  class="form-control input-lg"
+  id="input-phone"
+  placeholder="Phone Number"
+  required=""
+  pattern="[0-9]{10}"  
+/>
+                </div>
+
+
+                <div class="form-group">
+                  <i class="fa fa-user"></i>
+                  <input
+  type="number"
+  value=""
+  name="AGE"
+  class="form-control input-lg"
+  id="input-age"
+  placeholder="Child's Age"
+  required=""
+  min="1"  
+  max="100"  
+/>
+
+                </div>
+
+                
+
+                
+
+                <div class="form-group">
+                  <i class="fa fa-envelope-o"></i>
+                  <input
+                    type="email"
+                    value=""
+                    name="EMAIL"
+                    class="form-control input-lg"
+                    id="input-email"
+                    placeholder="Email address"
+                    required=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <i class="fa-solid fa-city"></i>
+                  <input
+  type="text"
+  value=""
+  name="CITY"
+  class="form-control input-lg"
+  id="input-city"
+  placeholder="City/Town"
+  required=""
+/>
+
+                </div>
+
+                <div class="form-group">
+                  <i class="fa-solid fa-location-pin"></i>
+                  <input
+  type="text"
+  value=""
+  name="AREA"
+  class="form-control input-lg"
+  id="input-area"
+  placeholder="Area"
+  required=""
+/>
+
+                </div>
+
+
+                
+                <div class="form-btn">
+                  <button type="submit" class="btn">CLAIM YOUR SPOT NOW</button>
+                  <p class="form-terms">
+                    By clicking sign up you agree to our
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#modal-terms"
+                      >Terms</a
+                    >
+                    and read our
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#modal-terms"
+                      >Privacy Policy</a
+                    >.
+                  </p>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+
+        <!--cta signup form end-->
+      </div>
+    </section>
+
+    <!--Benefits cta end-->
+
+    <!--video-->
+
+   <div style="padding: 20px;">
+    <div style="text-align: center;"><h2>Video Teaser</h2>
+      <p>A short (30-40 second) competition video that highlights our Competitions.
+
+      </p></div>
+    
+  <center><iframe width="80%" height="370" src="https://www.youtube.com/embed/WnvdaZhTNnI?si=0kALyK12KjCE36CF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+   </div>
+
+ 
+    <!--CTA section-->
+
+    <section class="cta text-center section-spacing">
+      <div class="container">
+        <header  class="section-header">
+          <h2>Why Register Now?</h2>
+          <p>
+            Give Your Child a Competitive Edge Today!
+This is your chance to give your child the tools to succeed. Our limited spots for the free Brainy Abacus webinar are filling up fast! Don’t miss this opportunity to:
+
+          </p>
+          <p>Get firsthand insights into the brain training program that’s transforming the way children learn.
+            Be part of an exclusive, live demonstration that could change the way your child approaches math and learning forever.
+            Learn simple techniques that can make a lasting impact on your child’s academic and personal success.
+            <p><b>Act Now—unlock your child’s future potential and get them ahead of the curve.</b></p>
+            
+            </p>
+        </header>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="cta-btn">
+              <a href="#" class="btn"
+                >Register Now</a
+              >
+              <p>Free seats are limited!</p>
+            </div>
+            <div class="support">
+              <h4>Don’t Miss Out – Help Your Child Thrive! Register for Our Free Webinar Now!
+              </h4>
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#modal-contact-form"
+                class="btn btn-secondary"
+                ><i class="fa fa-envelope"></i>EMAIL US</a
+              >
+              <a
+                href="#"
+                class="btn btn-secondary"
+                ><i class="fa fa-twitter"></i>TWEET US</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CTA section end-->
+
+    <!--Footer-->
+
+    <footer class="site-footer text-center section-spacing" id="site-footer">
+      <h4>For more information or support, feel free to contact us:
+      </h4>
+      <p>Phone : +91 1234567890</p>
+      <p>Email : Brainyabacus@gmail.com</p>
+      <div class="share-buttons">
+          <a href="#" class="share-button email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="share-button twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="share-button facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="share-button google"><i class="fab fa-google"></i></a>
+      </div>
+    </footer>
+
+
+    <!--Subscription form Modal -->
+
+    <div
+      class="modal fade sub-modal"
+      id="sub-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="sub-modal-label"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="sub-modal-label">
+              Subscribe To Our Newsletter
+            </h4>
+            <h5 class="modal-title">Get free ebook and special discounts</h5>
+            <img src="./ebook-cover.png" alt="Ebook" class="ebook-img" />
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <form id="mc-form" novalidate="true">
+                    <div id="mc-error">
+                      <i class="fa fa-exclamation-triangle"></i> Please enter a
+                      value
+                    </div>
+                    <div id="mc-success">
+                      <i class="fa fa-envelope"></i> Awesome! Subscription
+                      confirmed.
+                    </div>
+                    <div class="form-input">
+                      <p>
+                        <i class="fa fa-lock"></i> We will never share your
+                        email.
+                      </p>
+                      <i class="fa fa-envelope-o"></i>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required=""
+                        id="mc-email"
+                        name="EMAIL"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                      SUBSCRIBE
+                    </button>
+                    <p class="form-terms">
+                      By clicking subscribe you agree to our
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#modal-terms"
+                        >Terms</a
+                      >
+                      and read our
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#modal-terms"
+                        >Privacy Policy</a
+                      >.
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Subscription form Modal end-->
+   
+
+    
+    <!--Footer end-->
+
+    <!--Site policy modal -->
+    <div
+      class="modal fade site-policy"
+      id="modal-terms"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ModalLabel"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="modal-title text-center" id="ModalLabel">
+              Terms of Use
+            </h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              This privacy policy discloses the privacy practices for (website
+              address). This privacy policy applies solely to information
+              collected by this web site. It will notify you of the following:
+            </p>
+            <ul>
+              <li>
+                What personally identifiable information is collected from you
+                through the web site, how it is used and with whom it may be
+                shared.
+              </li>
+              <li>
+                What choices are available to you regarding the use of your
+                data.
+              </li>
+              <li>
+                The security procedures in place to protect the misuse of your
+                information.
+              </li>
+              <li>How you can correct any inaccuracies in the information.</li>
+            </ul>
+            <h3>Information Collection, Use, and Sharing</h3>
+            <p>
+              We are the sole owners of the information collected on this site.
+              We only have access to/collect information that you voluntarily
+              give us via email or other direct contact from you. We will not
+              sell or rent this information to anyone.
+            </p>
+            <p>
+              We will use your information to respond to you, regarding the
+              reason you contacted us. We will not share your information with
+              any third party outside of our organization, other than as
+              necessary to fulfill your request, e.g. to ship an order.
+            </p>
+            <p>
+              Unless you ask us not to, we may contact you via email in the
+              future to tell you about specials, new products or services, or
+              changes to this privacy policy.
+            </p>
+            <h3>Your Access to and Control Over Information</h3>
+            <p>
+              You may opt out of any future contacts from us at any time. You
+              can do the following at any time by contacting us via the email
+              address or phone number given on our website:
+            </p>
+            <ul>
+              <li>See what data we have about you, if any.</li>
+              <li>Change/correct any data we have about you.</li>
+              <li>Have us delete any data we have about you.</li>
+              <li>Express any concern you have about our use of your data.</li>
+            </ul>
+            <h3>Security</h3>
+            <p>
+              We take precautions to protect your information. When you submit
+              sensitive information via the website, your information is
+              protected both online and offline.
+            </p>
+            <p>
+              Wherever we collect sensitive information (such as credit card
+              data), that information is encrypted and transmitted to us in a
+              secure way. You can verify this by looking for a closed lock icon
+              at the bottom of your web browser, or looking for "https" at the
+              beginning of the address of the web page.
+            </p>
+            <p>
+              While we use encryption to protect sensitive information
+              transmitted online, we also protect your information offline. Only
+              employees who need the information to perform a specific job (for
+              example, billing or customer service) are granted access to
+              personally identifiable information. The computers/servers in
+              which we store personally identifiable information are kept in a
+              secure environment.
+            </p>
+            <h3>Registration</h3>
+            <p>
+              In order to use this website, a user must first complete the
+              registration form. During registration a user is required to give
+              certain information (such as name and email address). This
+              information is used to contact you about the products/services on
+              our site in which you have expressed interest. At your option, you
+              may also provide demographic information (such as gender or age)
+              about yourself, but it is not required.
+            </p>
+            <h3>Orders</h3>
+            <p>
+              We request information from you on our order form. To buy from us,
+              you must provide contact information (like name and shipping
+              address) and financial information (like credit card number,
+              expiration date). This information is used for billing purposes
+              and to fill your orders. If we have trouble processing an order,
+              we'll use this information to contact you.
+            </p>
+            <h3>Cookies</h3>
+            <p>
+              We use "cookies" on this site. A cookie is a piece of data stored
+              on a site visitor's hard drive to help us improve your access to
+              our site and identify repeat visitors to our site. For instance,
+              when we use a cookie to identify you, you would not have to log in
+              a password more than once, thereby saving time while on our site.
+              Cookies can also enable us to track and target the interests of
+              our users to enhance the experience on our site. Usage of a cookie
+              is in no way linked to any personally identifiable information on
+              our site.
+            </p>
+            <h3>Updates</h3>
+            <p>
+              Our Privacy Policy may change from time to time and all updates
+              will be posted on this page.
+            </p>
+            <p>
+              If you feel that we are not abiding by this privacy policy, you
+              should contact us immediately via telephone at
+              <a href="tel:+1856-236-1853">+1856-236-1853</a> or via email
+              <a href="mailto:Contact@webi.com">Contact@webi.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Site policy modal end-->
+
+    <!--contact form modal-->
+
+    <div class="modal fade" id="modal-contact-form" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="modal-body">
+            <!--contact form-->
+
+            <div class="contact-form text-center">
+              <header class="section-header">
+                <h2>Contact us</h2>
+                <h3>Have any questions? Send us a message.</h3>
+              </header>
+              <form
+                class="cta-form"
+                action="http://csmthemes.com/themes/webi/php/contact.php"
+                method="post"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact-name form-control input-lg"
+                    placeholder="Name *"
+                    id="contact-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="email"
+                    class="contact-email form-control input-lg"
+                    placeholder="Email address *"
+                    id="contact-email"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    class="contact-message form-control input-lg"
+                    rows="4"
+                    placeholder="Message *"
+                    id="contact-message"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="antispam"
+                    placeholder="Antispam question: 7 + 5 = ?"
+                    class="contact-antispam form-control input-lg"
+                    id="contact-antispam"
+                  />
+                </div>
+                <button type="submit" class="btn">SEND MESSAGE</button>
+              </form>
+            </div>
+
+            <!--contact form end-->
+
+            <p class="contact-form-success">
+              <i class="fa fa-check"></i
+              ><span>Thanks for contacting us!</span> We will get back to you
+              very soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--contact form modal end-->
+    <script src="https://kit.fontawesome.com/13e80f9169.js" crossorigin="anonymous"></script>
+    <script src="./jquery-2.1.4.min.js.download"></script>
+    <script src="./bootstrap.min.js.download"></script>
+    <script src="./jquery.magnific-popup.min.js.download"></script>
+    <script src="./jquery.ajaxchimp.min.js.download"></script>
+    <script src="./jquery.countdown.min.js.download"></script>
+    <script src="./owl.carousel.min.js.download"></script>
+    <script src="./jquery.waypoints.min.js.download"></script>
+    <script src="./jquery.color.min.js.download"></script>
+    <script src="./jquery.simple-text-rotator.min.js.download"></script>
+    <script src="./jquery.animateNumber.min.js.download"></script>
+    <script src="./jssocials.min.js.download"></script>
+    <script src="./retina.min.js.download"></script>
+    <script src="./tweetie.min.js.download"></script>
+    <script src="./main.js.download"></script>
+  </body>
+</html>
